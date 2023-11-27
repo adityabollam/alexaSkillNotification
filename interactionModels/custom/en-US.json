@@ -1,0 +1,71 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "url",
+              "type": "url"
+            }
+          ],
+          "name": "SendNotificationWithButton",
+          "samples": [
+            "testing",
+            "fix payment through {url}",
+            "notification with button {url}",
+            "notification {url}",
+            "send notification {url}",
+            "{url}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "music-home, settings"
+                ],
+                "value": "music"
+              },
+              "id": "MUSIC"
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "amazon-home, home"
+                ],
+                "value": "home"
+              },
+              "id": "AMAZON"
+            }
+          ],
+          "name": "url"
+        }
+      ],
+      "invocationName": "music payment notification"
+    }
+  }
+}
